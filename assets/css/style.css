@@ -1,0 +1,131 @@
+/*@import url('../font/font-face/font-awesome.min.css');*/
+
+@font-face {
+  font-family: 'Questrial';
+  src: url('../fonts/Questrial-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  font-family: 'Questrial';
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+  background: url(../img/home_bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  z-index: 10;
+  color: white;
+  width: 200px;
+  height: 200px;
+  font-size: 30px;
+  background: url(../img/logo.png) no-repeat center center;
+}
+.logo:hover {
+  opacity: 0.5;
+}
+.nav {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 75%;
+  z-index: 10;
+  color: white;
+}
+.nav > li > a {
+  color: white;
+  font-size: 1.6em;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.nav > li > a:hover {
+  color: rgba(255, 152, 28, 0.9);
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 152, 28, 0.9);
+}
+section h3 {
+  color: #ff981c;
+  font-size: 2em;
+  margin: 40px 0;
+}
+section#about {
+  background: url(../img/trans.png) repeat;
+  color: white;
+  font-size: 1.2em;
+}
+section#about li {
+  padding-left: 10px;
+  margin-top: 10px;
+}
+label {
+  font-size: 1.2em;
+}
+.inner_container {
+  width: 40%;
+  position: absolute;
+  left: 30%;
+}
+video#bgvid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url(./img/home_bg.jpg) no-repeat;
+  background-size: cover;
+}
+@media (min-width: 920px) and (max-width: 1169px) {
+  .logo {
+    left: 10%;
+  }
+  .nav {
+    top: 50%;
+    left: 11%;
+  }
+  .inner_container {
+    left: 35%;
+    width: 60%;
+  }
+}
+@media (min-width: 0px) and (max-width: 920px) {
+  .logo {
+    position: static;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .nav {
+    position: static;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+  }
+  .inner_container {
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    padding: 0px 10%;
+  }
+}
